@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="web.css">
+    </head>
+    <body>
+        <header>
+            <h1>検索結果</h1>
+        </header>
+        <table border="5">
+            <tr><th>用語</th><th>詳細</th></tr>
+            {% for term in results %}
+                <tr><td>{{term[0]}}</td><td>{{term[1]}}</td></tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

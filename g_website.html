@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/css/web.css">
+    </head>
+    <body>
+        <header>
+            <h1>G検定　用語検索・登録</h1>
+        </header>
+        <form name="browse_submit" action="servlet.py">
+            <input class="browse" name= "browse" type="text">
+            <input type="submit" name="button" value="検索"><br><br><br>
+        </form>
+        <form name="regist_submit" action="servlet.py">
+            用語：<input class="term" name="term" type="text" style="width:200px;height:50px;"><br><br>
+            詳細：<input class="detail" name="detail" type="text" style="width:500px;height:50px;"><br><br>
+            <input type="submit" name="submit" value="登録">
+        </form>
+    </body>
+</html>
